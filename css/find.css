@@ -1,0 +1,118 @@
+.find {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://www.hanbat.ac.kr/images/kor/common/sub__background3.png); 
+    margin-top: 120px;
+    padding: 100px 0 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.find h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.find h1:nth-child(4) {
+    color:  #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 0;
+
+}
+
+hr {
+    border: outset 10px;
+}
+/* id */
+.idfind__card {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.idfind__card div.in {
+    color:  #fff;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.idfind__card form {
+    padding: 20px 22px;
+}
+
+.idfind__card form input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.idfind__card form [type='submit'] {
+    background-color: plum;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.idfind__card form [type='submit']:hover {
+    background-color: violet;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* pass */
+.passfind__card {
+    width: 500px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.passfind__card div.in {
+    color:  #fff;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.passfind__card form {
+    padding: 30px 22px;
+}
+
+.passfind__card form input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.passfind__card form [type='submit'] {
+    background-color: plum;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.passfind__card form [type='submit']:hover {
+    background-color: violet;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
