@@ -46,7 +46,9 @@
   <section class="find">
     <h1>아이디 찾기</h1> 
     <div class="idfind__card">
-        <div class="in"><input type="radio" name="idcheck" value="1" onclick="div_OnOff1(this.value,'on');" checked> 회원정보에 등록한 휴대 전화로 인증</div>
+        <div class="in">
+         <label for="ch1"> <input type="radio" name="idcheck" id="ch1" value="1" onclick="div_OnOff1(this.value,'on');" checked> 회원정보에 등록한 휴대 전화로 인증 </label>
+        </div>
             <div id="idon">
                 <form>
                     <input type="text" placeholder="이름을 입력하세요." />
@@ -54,7 +56,9 @@
                     <input type="submit" value="아이디 찾기" />
                 </form> 
             </div>
-        <div class="in"><input type="radio" name="idcheck" value="2" onclick="div_OnOff1(this.value,'on1');"> 본인확인 이메일로 인증</div> 
+        <div class="in">
+         <label for="ch2"> <input type="radio" name="idcheck" id="ch2" value="2" onclick="div_OnOff1(this.value,'on1');"> 본인확인 이메일로 인증 </label>
+        </div> 
             <div id="idon1" style="display:none">
                 <form>
                  <input type="text" placeholder="이름을 입력하세요." />
@@ -66,7 +70,9 @@
     <hr>
     <h1>비밀번호 찾기</h1>
     <div class="passfind__card">
-        <div class="in"><input type="radio" name="pascheck" value="1" onclick="div_OnOff2(this.value,'on');" checked> <label>회원정보에 등록한 휴대 전화로 인증</label></div>
+        <div class="in">
+          <label for="ch3"> <input type="radio" name="pascheck" id="ch3" value="1" onclick="div_OnOff2(this.value,'on');" checked> 회원정보에 등록한 휴대 전화로 인증 </label>
+        </div>
             <div id="paon">
                 <form>
                     <input type="text" placeholder="아이디를 입력하세요." />
@@ -75,7 +81,9 @@
                     <input type="submit" value="비밀번호 찾기" />
                 </form> 
             </div>
-        <div class="in"><input type="radio" name="pascheck" value="2" onclick="div_OnOff2(this.value,'on1');"> <label>본인확인 이메일로 인증</label></div> 
+        <div class="in">
+          <label for="ch4">  <input type="radio" name="pascheck" id="ch4" value="2" onclick="div_OnOff2(this.value,'on1');"> 본인확인 이메일로 인증 </label>
+        </div> 
             <div id="paon1" style="display:none">
                 <form>
                     <input type="text" placeholder="아이디을 입력하세요." />
