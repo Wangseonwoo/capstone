@@ -9,122 +9,75 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/find.css">
 
-    <!-- cssReset -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-
-    <!-- fontStyle -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Material+Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
-    <script defer src="../js/common.js"></script>
-    <script defer src="../js/find.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
 </head>
 <body>
-        <!-- HEADER -->
-  <header>
-    <div class="inner">
-
-      <a href="/" class="logo">
-        <img src="../images/hanbat_logo.png" alt="HANBAT" />
-      </a>
-
-      <div class="sub-menu">
-        <ul class="menu">
-          <li>
-            <a href="./signin.html">Sign In</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  
-  <!-- IDFIND -->
-  <section class="find">
-    <h1>아이디 찾기</h1> 
-    <div class="idfind__card">
-        <div class="in">
-         <label for="ch1"> <input type="radio" name="idcheck" id="ch1" value="1" onclick="div_OnOff1(this.value,'on');" checked> 회원정보에 등록한 휴대 전화로 인증 </label>
-        </div>
-            <div id="idon">
-                <form>
-                    <input type="text" placeholder="이름을 입력하세요." />
-                    <input type="password" placeholder="전화번호를 입력하세요." />
-                    <input type="submit" value="아이디 찾기" />
-                </form> 
+         <!-- HEADER -->
+         <header>
+          <div class="inner">
+      
+            <a href="/" class="logo">
+              <img src="../images/hanbat_logo.png" alt="HANBAT" />
+            </a>
+      
+            <div class="sub-menu">
+              <ul class="menu">
+                <li>
+                  <a href="./signin.html">Sign In</a>
+                </li>
+              </ul>
             </div>
-        <div class="in">
-         <label for="ch2"> <input type="radio" name="idcheck" id="ch2" value="2" onclick="div_OnOff1(this.value,'on1');"> 본인확인 이메일로 인증 </label>
-        </div> 
-            <div id="idon1" style="display:none">
-                <form>
-                 <input type="text" placeholder="이름을 입력하세요." />
-                  <input type="password" placeholder="이메일을 입력하세요." />
-                 <input type="submit" value="아이디 찾기" />
-                </form>
-            </div>
-    </div>
-    <hr>
-    <h1>비밀번호 찾기</h1>
-    <div class="passfind__card">
-        <div class="in">
-          <label for="ch3"> <input type="radio" name="pascheck" id="ch3" value="1" onclick="div_OnOff2(this.value,'on');" checked> 회원정보에 등록한 휴대 전화로 인증 </label>
-        </div>
-            <div id="paon">
-                <form>
-                    <input type="text" placeholder="아이디를 입력하세요." />
-                    <input type="text" placeholder="이름을 입력하세요." />
-                    <input type="password" placeholder="전화번호를 입력하세요." />
-                    <input type="submit" value="비밀번호 찾기" />
-                </form> 
-            </div>
-        <div class="in">
-          <label for="ch4">  <input type="radio" name="pascheck" id="ch4" value="2" onclick="div_OnOff2(this.value,'on1');"> 본인확인 이메일로 인증 </label>
-        </div> 
-            <div id="paon1" style="display:none">
-                <form>
-                    <input type="text" placeholder="아이디을 입력하세요." />
-                    <input type="text" placeholder="이름을 입력하세요." />
-                    <input type="password" placeholder="이메일을 입력하세요." />
-                    <input type="submit" value="비밀번호 찾기" />
-                </form>
-            </div>
-    </div>
-  </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="inner">
-    
-          <ul class="menu">
-            <li> <a href="javasccript:void(0)" class="green">개인정보처리방침</a> </li>
-            <li> <a href="javasccript:void(0)">영상정보처리기기 운영관리 방침</a> </li>
-            <li> <a href="javasccript:void(0)">홈페이지 이용약관</a> </li>
-            <li> <a href="javasccript:void(0)">위치정보 이용약관</a> </li>
-            <li> <a href="javasccript:void(0)">윤리경영 핫라인</a> </li>
-          </ul>
-    
-          <div class="btn-group">
-            <a href="javasccript:void(0)" class="btn btn--white">찾아오시는 길</a>
-            <a href="javasccript:void(0)" class="btn btn--white">사이트 맵</a>
           </div>
-    
-          <div class="info">
-            <span>사업자등록번화 777-77-77777</span>
-            <span>(주) HBGATE 대표 이사 HBG</span>
-            <span>TEL : 042) 7777-8282 / FAX : 042) 7777-7777</span>
-            <span>개인정보 책임자 : HB </span>
-          </div>
-    
-          <p class="copyright">
-            &copy; <span class="this-year"></span> Hanbat Gate Company. All Rights Reserved.
-          </p>
-          <img src="../images/text_logo.png" alt="" class="logo" />
-    
-        </div>
-      </footer>
+        </header>
+  <div class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span>아이디 찾기</span><span>비밀번호 찾기</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">아이디 찾기</h4>
+											<div class="form-group">
+												<input type="text" name="logename" class="form-style" placeholder="이름을 입력하세요" id="logname" autocomplete="off">
+												<i class="input-icon uil uil-user"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="email" name="logmail" class="form-style" placeholder="이메일을 입력하세요" id="logmail1" autocomplete="off">
+												<i class="input-icon uil uil-at"></i>
+											</div>
+											<a href="#" class="btn mt-4">제출하기</a>
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">비밀번호 찾기</h4>
+											<div class="form-group">
+												<input type="text" name="logename" class="form-style" placeholder="아이디를 입력하세요" id="logname" autocomplete="off">
+												<i class="input-icon uil uil-user"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="email" name="logmail" class="form-style" placeholder="이메일을 입력하세요" id="logmail1" autocomplete="off">
+												<i class="input-icon uil uil-at"></i>
+											</div>
+											<a href="#" class="btn mt-4">제출하기</a>
+				      					</div>
+			      					</div>
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	</div>
 </body>
 </html>

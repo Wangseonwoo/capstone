@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join</title>
+  <link href="../css/common.css" rel="stylesheet" />
+  <link href="../css/signup.css" rel="stylesheet" />
+  <script src="../js/signup.js"></script>
+
+</head>
+<body>
+  <div>
+    <div class="wrapper">
+      <div class="title">
+        <a href="/" class="logo">
+            <img src="../images/hanbat_logo.png" alt="HANBAT" />
+          </a>
+        <h1 style="font-size: 21px;">회원가입</h1>
+        </div>
+        <div class="email">
+            <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
+            <div id="emailError" class="error"></div>
+        </div>
+        <div class="name">
+            <input id="name"  type="text" placeholder="이름을 입력해 주세요.">
+            <div id="nameError" class="error"></div>
+        </div>
+        <div class="password">
+            <input id="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+            <div id="passwordError" class="error"></div>
+        </div>
+        <div class="passwordCheck">
+            <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요.">
+            <div id="passwordCheckError" class="error"></div>
+        </div>
+        <div class="phone">
+            <input id="phone1" type="text" size="2" maxlength="3" oninput="changePhone1()">-
+            <input id="phone2" type="text" size="3" maxlength="4" oninput="changePhone2()">-
+            <input id="phone3" type="text" size="3" maxlength="4" oninput="changePhone3()">
+    
+        </div>
+        <div class="auth">
+            <div id="certificationNumber">000000</div>
+            <button disabled id="sendMessage" onclick="getToken()">인증번호 전송</button>
+        </div>
+    
+        <div class="timer">
+            <div id="timeLimit">03:00</div>
+            <button disabled id="completion" onclick="checkCompletion()">인증확인</button>
+        </div>
+        <div class="area">
+            <select id="area">
+                <option selected disabled>가입형태를 골라주세요.</option>
+                <option>관리자</option>
+                <option>주민</option>
+                <option>방문객</option>
+            </select>
+            <div id="areaError" class="error"></div>
+        </div>
+        <div class="gender">
+            <input id="gender_man" type="radio" name="gender">남성  
+            <input id="gender_woman" type="radio" name="gender">여성
+            <div id="genderError" class="error"></div>
+        </div>
+        <div class="line">
+            <hr>
+        </div>
+        <div class="signUp">
+          <button id="signUpButton" disabled onclick="signUpCheck()">가입하기</button>
+      </div>      
+    </div>
+  </div>
+  <div>
+    <footer>
+      <div class="inner">
+
+        <ul class="menu">
+          <li> <a href="javasccript:void(0)" class="green">개인정보처리방침</a> </li>
+          <li> <a href="javasccript:void(0)">영상정보처리기기 운영관리 방침</a> </li>
+          <li> <a href="javasccript:void(0)">홈페이지 이용약관</a> </li>
+          <li> <a href="javasccript:void(0)">위치정보 이용약관</a> </li>
+          <li> <a href="javasccript:void(0)">윤리경영 핫라인</a> </li>
+        </ul>
+
+        <div class="btn-group">
+          <a href="javasccript:void(0)" class="btn btn--white">찾아오시는 길</a>
+          <a href="javasccript:void(0)" class="btn btn--white">사이트 맵</a>
+        </div>
+
+        <div class="info">
+          <span>사업자등록번화 777-77-77777</span>
+          <span>(주) HBGATE 대표 이사 HBG</span>
+          <span>TEL : 042) 7777-8282 / FAX : 042) 7777-7777</span>
+          <span>개인정보 책임자 : HB </span>
+        </div>
+
+        <p class="copyright">
+          &copy; <span class="this-year"></span> Hanbat Gate Company. All Rights Reserved.
+        </p>
+        <img src="../images/text_logo.png" alt="" class="logo" />
+      </div>
+    </footer>
+  </div>
+  
+</body>
+
+</html>
